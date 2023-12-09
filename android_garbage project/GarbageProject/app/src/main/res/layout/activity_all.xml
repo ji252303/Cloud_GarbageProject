@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="쓰레기통 로그 조회"
+            android:textColor="#1C1C1C"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <Button
+            android:id="@+id/start_date_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="조회시작 날짜 선택" />
+        <Button
+            android:id="@+id/start_time_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="조회시작 시간 선택" />
+
+        <TextView
+            android:id="@+id/textView_date1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="yyyy-mm-dd " />
+        <TextView
+            android:id="@+id/textView_time1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hh:mm" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp">
+
+        <Button
+            android:id="@+id/end_date_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="조회종료 날짜 선택" />
+        <Button
+            android:id="@+id/end_time_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="조회종료 시간 선택" />
+
+        <TextView
+            android:id="@+id/textView_date2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="yyyy-mm-dd " />
+        <TextView
+            android:id="@+id/textView_time2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hh:mm" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="20dp">
+
+        <Button
+            android:id="@+id/log_start_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="로그 조회 시작" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="374dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="307dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="0dp"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/logList"
+                android:layout_width="match_parent"
+                android:layout_height="366dp"
+                android:textSize="12dp">
+            </ListView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="LED / BUZZER 제어"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="20dp">
+
+            <Button
+                android:id="@+id/onBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="100dp"
+                android:textSize="20dp"
+                android:text="ON" />
+
+            <Button
+                android:id="@+id/offBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:textSize="20dp"
+                android:layout_marginLeft="40dp"
+                android:text="OFF" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

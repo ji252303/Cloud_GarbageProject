@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp">
+
+        <!-- Add any views or elements you want in this LinearLayout -->
+
+    </LinearLayout>
+
+    <!-- LinearLayout for the first button -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/listBtn"
+            android:layout_width="match_parent"
+            android:layout_height="117dp"
+            android:layout_gravity="center"
+            android:text="쓰레기통 목록 조회"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <!-- LinearLayout for the third button -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/nowBtn"
+            android:layout_width="match_parent"
+            android:layout_height="117dp"
+            android:layout_gravity="center"
+            android:text="쓰레기통 현재 상태"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <!-- LinearLayout for the second button -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/allBtn"
+            android:layout_width="match_parent"
+            android:layout_height="117dp"
+            android:layout_gravity="center"
+            android:text="쓰레기통 로그조회"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</LinearLayout>
