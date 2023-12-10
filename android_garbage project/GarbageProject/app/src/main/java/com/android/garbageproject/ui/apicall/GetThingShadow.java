@@ -46,9 +46,11 @@ public class GetThingShadow extends GetRequest {
 
         TextView reported_ledTV = activity.findViewById(R.id.reported_led);
         TextView reported_weightTV = activity.findViewById(R.id.reported_weight);
+        TextView reported_budgetTV = activity.findViewById(R.id.reported_budget);
 
         reported_weightTV.setText(state.get("reported_weight"));
         reported_ledTV.setText(state.get("reported_LED"));
+        reported_budgetTV.setText(state.get("reported_budget"));
 
     }
 
@@ -64,9 +66,11 @@ public class GetThingShadow extends GetRequest {
             JSONObject state = root.getJSONObject("state");
             JSONObject reported = state.getJSONObject("reported");
             String weightValue = reported.getString("weight");
+            String budgetValue = reported.getString("budget");
 
             String ledValue = reported.getString("LED");
             output.put("reported_weight", weightValue);
+            output.put("reported_budget", budgetValue);
 
             output.put("reported_LED",ledValue);
         } catch (JSONException e) {
