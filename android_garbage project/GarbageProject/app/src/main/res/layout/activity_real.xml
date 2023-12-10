@@ -130,6 +130,14 @@
         android:layout_gravity="center"
         android:gravity="center"/>
 
+    <TextView
+        android:id="@+id/reported_budget"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="20dp" />
+
 
 
     <ScrollView
