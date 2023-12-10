@@ -129,6 +129,7 @@ void getDeviceStatus(char* payload) {
   
  //무게값을 실수로 읽어 오기 위해 변수 t 선언
   float t = scale.get_units();
+  float budget = t * 130;
 
   if(t > 30.0){ //무게가 8kg을 넘었을 때 LED가 켜짐
     led1.on();
@@ -140,7 +141,7 @@ void getDeviceStatus(char* payload) {
   const char* led = (led1.getState() == LED_ON)? "ON" : "OFF";
 
   // update시 출력
-  sprintf(payload,"{\"state\":{\"reported\":{\"weight\":\"%0.2f\",\"LED\":\"%s\"}}}",t,led);
+  sprintf(payload,"{\"state\":{\"reported\":{\"weight\":\"%0.2f\",\"LED\":\"%s\",\"budget\":\"%0.1f\"}}}",t,led,budget);
 }
 
 void sendMessage(char* payload) {
