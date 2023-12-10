@@ -141,8 +141,8 @@ public class RealActivity extends AppCompatActivity {
         }
 
         final double costPerKg = 130; // 1kg당 예산 가격
-        final double budget = weightValue * costPerKg;
-        final int myInt = (int) budget;
+        final double Budget = weightValue * costPerKg;
+        final int myInt = (int) Budget;
 
         // UI 업데이트를 위해 runOnUiThread 사용
         runOnUiThread(new Runnable() {
@@ -150,7 +150,7 @@ public class RealActivity extends AppCompatActivity {
             public void run() {
                 // TextView 등을 활용하여 메시지를 표시하는 부분
                 Toast.makeText(RealActivity.this, message, Toast.LENGTH_SHORT).show();
-                budgetTextView.setText("현재 무게의 예산 가격: " + myInt + "원");
+                budgetTextView.setText("현재 무게의 예산 가격: ");
             }
         });
     }
